@@ -92,6 +92,7 @@ six==1.13.0
 sqlparse==0.3.0
 ssh-import-id==5.7
 stevedore==1.31.0
+stripe==2.42.0
 systemd-python==234
 tomlkit==0.5.8
 Twisted==17.9.0
