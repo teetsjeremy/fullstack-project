@@ -34,10 +34,25 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
 ### JQuery
+- https://jquery.com/
 The project uses JQuery to simplify DOM manipulation.
+
+### Django
+- https://www.djangoproject.com/
+The project uses Django for many tasks, including dbstorage, admin functions
+
+### Python
+- https://www.python.org/
+The project used Python for site creation and app management
+
+### Bootstrap
+- https://getbootstrap.com/
+The project uses Bootstrap for the layout, stylings, and grid system
+
+### AWS
+- https://aws.amazon.com/
+The project uses Amazon Web Services for the C9 terminal, S3 for storage, as well as IAM for user management
 
 ## Testing
 

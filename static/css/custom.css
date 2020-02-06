@@ -1,18 +1,64 @@
+.navbar {
+    background-image: -webkit-linear-gradient(#ffffff, #aea396 60%, #795549);
+    background-image: -o-linear-gradient(#ffffff, #aea396 60%, #795549);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(60%, #aea396), to(#795549));
+    background-image: linear-gradient(#ffffff, #aea396 60%, #795549);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    border-bottom: 1px solid #baad9d;
+    -webkit-filter: none;
+    filter: none;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
 body {
     font-family: Arial;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.product {
+    color:#f7f6f6cc;
+    min-height: 80px;
+}
+
+.body {
+    background-attachment: fixed;
+    background-image: url("/media/images/board-bricks-brickwork-concrete-269063.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    color: #65022c;
+}
+.panel-display {
+    background-color: #AAAAAA00;
+}
+.panel-body {
+    background-color: #bfb3a3ad;
 }
 
 footer {
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
     border-top: 1px solid #ededed;
     color: #A9A9A9;
 }
 
+.foot {
+    background-color: #795548;
+    margin-bottom: 0;
+    height: 15vh;
+    width: 100vw;
+    z-index: 1;
+    color: #f59b2d;
+    
+}
+
 .icon-bar {
-    background-color: #fff;
+    background-color: #f59b2d;
 }
 
 .accountform {
