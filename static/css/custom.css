@@ -20,6 +20,7 @@ body {
 .product {
     color:#f7f6f6cc;
     min-height: 80px;
+    
 }
 
 .body {
@@ -109,4 +110,8 @@ caption p {
 
 .product-description {
     min-height: 40px;
+}
+
+.profile {
+    color: yellow;
 }
