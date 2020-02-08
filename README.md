@@ -60,6 +60,8 @@ In this section, you need to convince the assessor that you have conducted enoug
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
+[![Build Status](https://travis-ci.org/teetsjeremy/fullstack-project.svg?branch=master)](https://travis-ci.org/teetsjeremy/fullstack-project)
+
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Contact form:
@@ -88,14 +90,14 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-###Content
+### Content
 
 1. The text for section Y was copied from the Wikipedia article Z
 
-###Media
+### Media
 
 1. The photos used in this site were obtained from ...
 
-###Acknowledgements
+### Acknowledgements
 
 1. I received inspiration for this project from X
