@@ -1,10 +1,20 @@
 {% extends 'base.html' %}
-
+    
 {% block content %}
+
+<nav class="navbar navbar-head">
+    <div class="jumbotron jumbotron-fluid" id="home">
+        
+        <p>Lorem ipsum..... stuf.....ya.....more stuff </p>
+        
+    </div>
+</nav>
+
+
 <ul class="list-unstyled">
     
     {%for product in products %}
-    <li class="col-sm-4">
+    <li class="col-sm-4" style="padding: 5px;">
             <div class="col panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <h3 class="product-name">{{ product.name }}</h3>

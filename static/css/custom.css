@@ -15,6 +15,26 @@
     padding-top: 10px;
 }
 
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-head {
+    width: 100vw;
+}
+
+.jumbotron {
+    background-attachment: fixed;
+    background-image: url("/media/images/above-ground-photo-of-succulent-plants-on-brown-wooden-board-1470168.jpg");
+    background-size: cover;
+    margin-bottom: 0;
+    height: 75vh;
+    width: 100vw;
+    z-index: 1;
+    color: #ffffff;
+}
+
 body {
     font-family: Arial;
     padding-top: 50px;
@@ -26,12 +46,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    
 }
 
 .product-name {
     color:#f7f6f6cc;
     min-height: 80px;
+}
+
+.item {
+    padding-left: 5;
+    padding-right: 5;
 }
 
 .body {
