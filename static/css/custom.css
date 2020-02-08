@@ -53,6 +53,19 @@ body {
     min-height: 80px;
 }
 
+.product-description {
+    min-height: 40px;
+}
+
+.products {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
 .item {
     padding-left: 5;
     padding-right: 5;
@@ -114,15 +127,6 @@ footer {
     background-color: #c67605;
 }
 
-.products {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-}
-
 caption p {
     word-wrap: break-word;
 }
@@ -141,10 +145,6 @@ caption p {
 .panel-body {
     height: 100%;
     border: 1px solid #ddd;
-}
-
-.product-description {
-    min-height: 40px;
 }
 
 .profile {
