@@ -1,0 +1,1 @@
+web: gunicorn fullstack-project.wsgi:application
