@@ -33,8 +33,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 more-itertools==8.0.2
 netifaces==0.10.4
-oauthlib==2.0.6
-PAM==0.4.2
+oauthlib==2.0.6 
 parso==0.1.1
 pbr==5.4.4
 Pillow==7.0.0
