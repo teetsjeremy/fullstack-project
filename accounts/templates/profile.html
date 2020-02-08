@@ -2,6 +2,7 @@
 {% block page_title %}{{ profile.user }}'s Profile{% endblock %}
 {% block page_heading %}{{ profile.user }}'s Profile{% endblock %} 
 {% block content %}
+    <p class="profile">{{ profile.firstname }}</p>
     <p class="profile">{{ profile.username }}</p>
     <p class="profile">{{ profile.email }}</p>
 {% endblock %}

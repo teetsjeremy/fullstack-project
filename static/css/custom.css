@@ -7,9 +7,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
     border-bottom: 1px solid #baad9d;
     -webkit-filter: none;
-    filter: none;
     -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+.search {
+    padding-top: 10px;
 }
 
 body {
@@ -20,7 +23,15 @@ body {
 .product {
     color:#f7f6f6cc;
     min-height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     
+}
+
+.product-name {
+    color:#f7f6f6cc;
+    min-height: 80px;
 }
 
 .body {
@@ -30,7 +41,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     z-index: 1;
     color: #65022c;
