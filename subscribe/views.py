@@ -10,10 +10,10 @@ def create_subscribe(request, pk):
     """
     subscribe = get_object_or_404(Subscribe, pk=pk)
     if request.method == "POST":
-        form = SubscribeForm(request.POST, request.FILES, instance=subscribe)
-        if form.is_valid():
-            post = form.save()
-            return redirect(subscribe.pk)
+        subscribe_form = SubscribeForm(request.POST, request.FILES, instance=subscribe)
+        if subscribe.form.is_valid():
+            post = subscribe.form.save()
+            return redirect(Subscribe.pk)
     else:
         form = SubscribeForm(instance=post)
-    return render(request, 'subscribe.html', {'form': form})
+    return redirect('/base.html')
