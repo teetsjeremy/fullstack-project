@@ -3,5 +3,5 @@ from .subscribe import Subscribe
 
 class SubscribeForm(forms.ModelForm):
     class Meta:
-        model = Subscribe
+        model = 
         fields = ('email', 'first name', 'last name', 'date of birth')
