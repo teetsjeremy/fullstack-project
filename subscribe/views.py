@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, reverse, redirect
 from .models import Subscribe
 from .forms import SubscribeForm
 
@@ -8,12 +8,15 @@ def create_subscribe(request):
     """
     Create a view that subscribes user to mailing list
     """
-    subscribe = get_object_or_404(Subscribe)
-    if request.method == "POST":
-        subscribe_form = SubscribeForm(request.POST, request.FILES, instance=Subscribe)
+    subscribe_form = SubscribeForm(request.POST or None)
+    if request.method=="POST":
+        
         if Subscribe.form.is_valid():
-            post = Subscribe.form.save()
-            return redirect(Subscribe.pk)
+            email = subscribe_form.cleaned_data['email']
+            first_name = subscribe_form.cleaned_data['first_name']
+            last_name = subscribe_form.cleaned_data['last_name']
+            date_of_birth = subscribe_form.cleaned_data['date_of_birth']
+            return redirect('products.html')
     else:
-        form = SubscribeForm(instance=post)
-    return render(request, 'subscribe.html', {'form': form})
+        
+        return render(request, 'subscribe.html', {'subscribe_form': subscribe_form})

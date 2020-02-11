@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+
+{% load bootstrap_tags %}
     
 {% block content %}
 
-<div class="row">
+<div class="row panel-body">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
         <div class="card">
             <h5 class="card-header">Krissy's Quilts</h5>
@@ -14,7 +16,7 @@
                         {{ subscribe_form | as_bootstrap }}
                     </form>
                 </p>
-                <a href="#" class="btn btn-primary">Submit</a>
+                <a href="/" class="btn btn-primary">Submit</a>
             </div>
         </div>
     </div>

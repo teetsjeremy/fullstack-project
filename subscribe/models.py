@@ -9,5 +9,5 @@ class Subscribe(models.Model):
     last_name = models.CharField(max_length=30)
     date_of_birth = models.DateField(blank=True,null=False, default=timezone.now)
     
-    def __str__(self):
+    def __unicode__(self):
         return self.first_name

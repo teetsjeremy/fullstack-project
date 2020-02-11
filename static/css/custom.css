@@ -88,6 +88,8 @@ body {
 }
 .panel-body {
     background-color: #bfb3a3ad;
+    height: 100%;
+    border: 1px solid #ddd;
 }
 
 footer {
@@ -140,11 +142,6 @@ caption p {
 .panel-default {
     border-color: transparent;
     padding: 0 10px;
-}
-
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
 }
 
 .profile {
