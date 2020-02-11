@@ -1,7 +1,7 @@
 from django import forms
-from .subscribe import Subscribe
+from .models import Subscribe
 
 class SubscribeForm(forms.ModelForm):
     class Meta:
         model = Subscribe
-        fields = ('email', 'first name', 'last name', 'date of birth')
+        fields = ('email', 'first_name', 'last_name', 'date_of_birth')

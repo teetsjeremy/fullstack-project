@@ -39,7 +39,7 @@
                         <li><a href="{% url 'registration' %}">Register</a></li>
                         <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
-                    <li><a href="/">Patterns</a></li>
+                    <li><a href="{% url 'create_subscribe' %}">Subscribe</a></li>
                     <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
