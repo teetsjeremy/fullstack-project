@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static from static %}
+{% load bootstrap_tags %}
+    
+{% block content %}
+
+<div class="row panel-body">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <div class="card">
+            <h5 class="card-header">Krissy's Quilts</h5>
+            <div class="card-body">
+                <h5 class="card-title">Submit your pattern!</h5>
+                <p class="card-text">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ patterns_form | as_bootstrap }}
+                    </form>
+                </p>
+                <div class="form-group col-xs-12">
+                    <input class="btn btn-primary" id="submit_btn" name="commit" type="submit" value="Submit Pattern">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
