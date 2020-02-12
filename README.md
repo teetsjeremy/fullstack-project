@@ -1,6 +1,6 @@
 # Fullstack-Project
 
-I have created this website as a project for my Fullstack with Django module. It is an e-commerce site. I chose to do this type of application for the dual purpose of creating a site for my wife to sell her quilts on as well. The email and shopping functions don't actually work at this time, simply because they aren't needed yet. All of the frameworks are in place, just disabled.
+I have created this website as a project for my Fullstack with Django module. It is an e-commerce site. I chose to do this type of application for the dual purpose of creating a site for my wife to sell her quilts on as well.
 
 ## UX
 
@@ -10,13 +10,13 @@ When i chose to do the e-commerce site for my project, I instantly thought of my
 
 - As a shopper, I want to purchase a quilt as a gift.
 ...
-- As a happy customer, I want to email the seller to say thank you.
+- As a happy customer, I want to recieve coupons from the seller for future purchases.
 ...
 - As a shopper, I want an easy to view layout with images of the product.
 ...
-- As a frequent shopper, I want to create an account so i won't have to enter my info every time I make a purchase.
+- As a shoper, I want to know that my purchase is secure.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+Wireframes are stored in the mockups folder : (/mockups/fullstack wireframes.pdf)
 
 ### Features
 
@@ -30,6 +30,10 @@ This section is also where you would share links to any wireframes, mockups, dia
 - Cart - allows shoppers/customers to save products in a temporary shopping cart until ready to check-out
 ...
 - Check-out - allows shoppers/customers to purchase the saved items in thier cart
+...
+- Patterns - allows shoppers/customers to upload thier own quilting patterns
+...
+- Subscribe - allows shoppers/customers to subscribe to a mailing list for discounts/coupons/discussion topics
 
 
 ## Technologies Used
@@ -54,50 +58,50 @@ The project uses Bootstrap for the layout, stylings, and grid system
 - https://aws.amazon.com/
 The project uses Amazon Web Services for the C9 terminal, S3 for storage, as well as IAM for user management
 
+### Stripe
+- https://stripe.com/
+The project uses Stripe's payment and backend handling of the payments
+
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
+I have utilized Travis Continuous Integration testing at the following link:
 [![Build Status](https://travis-ci.org/teetsjeremy/fullstack-project.svg?branch=master)](https://travis-ci.org/teetsjeremy/fullstack-project)
+
+I also tested the responsiveness of the site using chrome dev tools, everything operated as desired at this time.
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
+1. Registration form:
+    1. Go to the "Register" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-    
+    4. Try to submit the form with all inputs valid and verify that a success message appears
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+2. Login form:
+    1. Go to the "Login" page
+    2. Try to login with empty fields and verify that an error message appears
+    3. Try to login with in-valid credentials and verify an error message appears
+    4. Try to login with valid credentials and verify a success message appears
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+3. Cart
+    1. Add item to cart and verify it is acutally placed in the "cart"
+    2. Remove items from the cart and verify that the item is no longer in the "cart"
+    3. Update quantities of items in the cart and verify the quanitiy actually changes
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The project is deployed on Heroku, the github repository is linked to Heroku as well. I did not utilize the automatic build feature and elected to build the app only as I wished and not with every git push.
+I stored all config vars in a hidden file within the app and simply used the cofig vars setting in heroku to add all of my needed values/keys
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+You can see the project here: (https://full-stack-project.herokuapp.com/)
 
 ## Credits
 
-### Content
-
-1. The text for section Y was copied from the Wikipedia article Z
-
 ### Media
 
-1. The photos used in this site were obtained from ...
+1. The photos used in this site were obtained from Pexels
 
 ### Acknowledgements
 
-1. I received inspiration for this project from X
+1. I received inspiration for this project from the ecommerce site in the learning module.

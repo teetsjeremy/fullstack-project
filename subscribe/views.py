@@ -8,7 +8,7 @@ def create_subscribe(request):
     """
     Create a view that subscribes user to mailing list
     """
-    subscribe_form = SubscribeForm(request.POST or None)
+    subscribe_form = SubscribeForm(request.POST)
     if request.method=="POST":
         
         if Subscribe.form.is_valid():
