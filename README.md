@@ -69,8 +69,6 @@ I have utilized Travis Continuous Integration testing at the following link:
 
 I also tested the responsiveness of the site using chrome dev tools, everything operated as desired at this time.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
 1. Registration form:
     1. Go to the "Register" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
@@ -96,7 +94,7 @@ For any scenarios that have not been automated, test the user stories manually a
 ## Deployment
 
 The project is deployed on Heroku, the github repository is linked to Heroku as well. I did not utilize the automatic build feature and elected to build the app only as I wished and not with every git push.
-I stored all config vars in a hidden file within the app and simply used the cofig vars setting in heroku to add all of my needed values/keys
+I stored all config vars in a hidden file within the app and simply used the cofig vars setting in heroku to add all of my needed values/keys, as well as ensuring DEBUG mode was disabled.
 
 You can see the project here: (https://full-stack-project.herokuapp.com/)
 
