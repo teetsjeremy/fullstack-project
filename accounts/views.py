@@ -56,8 +56,8 @@ def registration(request):
                 return redirect(reverse ('index'))
             else:
                 messages.error(request, "Unable to register your account at this time")
-    else:        
-        registration_form = UserRegistraionForm()
+    else:
+        return render(request, 'subscribe.html', {'registration_form': UserRegistraionForm})
         
     return render(request, 'registration.html', {
         "registration_form": registration_form})

@@ -18,9 +18,11 @@ def patterns(request):
     """
     Create a view that users can upload thier own quilt patterns
     """
+    
+    patterns_form = PatternsForm(request.POST, request.FILES)    
     if request.method == 'POST':
-        patterns_form = PatternsForm(request.POST, request.FILES)
         patterns_form.save()
-        return redirect('products.html')
+        messages.success(request, "Pattern Uploaded! Thank You!!")
+        return redirect('/')
     else:
         return render(request, 'patterns.html', {'patterns_form':patterns_form})

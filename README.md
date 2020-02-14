@@ -88,6 +88,10 @@ For any scenarios that have not been automated, test the user stories manually a
     2. Remove items from the cart and verify that the item is no longer in the "cart"
     3. Update quantities of items in the cart and verify the quanitiy actually changes
 
+4. Patterns
+    1. click on patterns tab
+    2. Try to submit empty form and verify an error message occurs
+    3. Try to submit completed form and verify a success message appears
 
 ## Deployment
 
