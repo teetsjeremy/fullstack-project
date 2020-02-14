@@ -21,19 +21,13 @@ def patterns(request):
     
         
     if request.method == 'POST':
-        patterns_form = PatternsForm(request.POST)
-        if patterns_form.is_valid():
-            name = patterns_form.cleaned_data['name']
-            size = patterns_form.cleaned_data['size']
-            description = patterns_form.cleaned_data['description']
-            image = patterns_form.cleaned_data['image']
-#            patterns_form.save()
+        patterns_form = PatternsForm(request.POST, request.FILES)
+        patterns_form.save()
 #            print('hello world')  
 #            patterns = auth.authenticate(name = request.POST['name'],
 #                       size = request.POST['size'],
 #                        description = request.POST['description'])
-#            return redirect('index.html')
-#            print('Hello World')
+#            return redirect('index.html'))
     else:
         patterns_form = PatternsForm()
         

@@ -12,13 +12,13 @@
                 <h5 class="card-title">Submit your pattern!</h5>
                 <p>* All posts are reviewed by administration prior to posting *</p>
                 <p class="card-text">
-                    <form action="//" method="POST">
+                    <form action="" method="POST">
                         {% csrf_token %}
                         {{ patterns_form | as_bootstrap }}
                     </form>
                 </p>
                 <div class="form-group col-xs-12">
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-primary" type="submit"><a href="/">Submit</a></button>
                 </div>
             </div>
         </div>
