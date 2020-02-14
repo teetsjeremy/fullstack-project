@@ -18,17 +18,9 @@ def patterns(request):
     """
     Create a view that users can upload thier own quilt patterns
     """
-    
-        
     if request.method == 'POST':
         patterns_form = PatternsForm(request.POST, request.FILES)
         patterns_form.save()
-#            print('hello world')  
-#            patterns = auth.authenticate(name = request.POST['name'],
-#                       size = request.POST['size'],
-#                        description = request.POST['description'])
-#            return redirect('index.html'))
+        return redirect('products.html')
     else:
-        patterns_form = PatternsForm()
-        
-    return render(request, 'patterns.html', {"patterns_form": patterns_form})
+        return render(request, 'patterns.html', {'patterns_form':patterns_form})

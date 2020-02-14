@@ -1,5 +1,4 @@
 import os
-import env
 import  dj_database_url
 
 
@@ -7,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["0fabdde0b8c444a2a3db4427fb5179dc.vfs.cloud9.us-west-2.amazonaws.com",
                 "full-stack-project.herokuapp.com"]

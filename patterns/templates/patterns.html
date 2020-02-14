@@ -15,11 +15,12 @@
                     <form action="" method="POST">
                         {% csrf_token %}
                         {{ patterns_form | as_bootstrap }}
+                    <div class="form-group col-xs-12">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>       
                     </form>
                 </p>
-                <div class="form-group col-xs-12">
-                    <button class="btn btn-primary" type="submit"><a href="/">Submit</a></button>
-                </div>
+                
             </div>
         </div>
     </div>
