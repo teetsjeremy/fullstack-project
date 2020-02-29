@@ -42,7 +42,7 @@ def registration(request):
         return redirect(reverse('index'))
         
     if request.method == "POST":
-        registration_form = UserRegistraionForm(request.POST)
+        registration_form = UserRegistrationForm(request.POST)
         
         if registration_form.is_valid():
             registration_form.save()
@@ -57,7 +57,7 @@ def registration(request):
             else:
                 messages.error(request, "Unable to register your account at this time")
     else:
-        return render(request, 'registration.html' {'registration_form': UserRegistraionForm})
+        return render(request, 'registration.html', {'registration_form': UserRegistrationForm})
         
     return render(request, 'registration.html', {
         "registration_form": registration_form})
