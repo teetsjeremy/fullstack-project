@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import admin, auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from accounts.forms import UserLoginForm, UserRegistraionForm
+from accounts.forms import UserLoginForm, UserRegistrationForm
 
 def index(request):
     """Return the index.html file"""
